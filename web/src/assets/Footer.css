@@ -1,0 +1,27 @@
+footer {
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer .nav-link {
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  footer .nav-link:hover {
+    transform: translateY(-3px);
+  }
+  
+  footer .nav-link.twitter:hover {
+    color: #1da1f2;
+  }
+  
+  footer .nav-link.linkedin:hover {
+    color: #0077b5;
+  }
+  
+  footer .nav-link.github:hover {
+    color: #333;
+  }
