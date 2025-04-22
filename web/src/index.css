@@ -1,0 +1,63 @@
+/* src/components/UnderConstruction.css */
+
+.construction-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  flex-direction: column;
+}
+
+.construction-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.construction-message {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.construction-animation {
+  margin-top: 30px;
+  width: 80%;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.construction-bar {
+  width: 0;
+  height: 100%;
+  background-color: #007bff;
+  animation: loading 3s ease-in-out infinite;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 60%;
+  }
+  100% {
+    width: 100%;
+  }
+}
