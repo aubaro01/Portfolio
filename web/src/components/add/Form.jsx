@@ -2,8 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Form, Button, Alert, Spinner, FloatingLabel } from 'react-bootstrap';
 import { FiSend, FiUser, FiMail, FiMessageSquare } from 'react-icons/fi';
 import { motion } from 'framer-motion';
-import axios from 'axios'; 
-
+import axios from 'axios';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -17,11 +16,10 @@ const ContactForm = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
   const formRef = useRef();
 
-  const API_ENDPOINT = 'https://sua-api.com/contato';
+  const API_ENDPOINT = process.env.REACT_APP_API_URL;
   const API_HEADERS = {
     'Content-Type': 'application/json',
-    // Adicione headers adicionais se necessário (como tokens de autenticação)
-    // 'Authorization': 'Bearer seu-token-aqui'
+    
   };
 
   const validateForm = () => {
@@ -71,12 +69,10 @@ const ContactForm = () => {
     setSubmitStatus(null);
     
     try {
-      // Chamada para a API
       const response = await axios.post(API_ENDPOINT, formData, {
         headers: API_HEADERS
       });
 
-      // Verifica se a requisição foi bem-sucedida
       if (response.status >= 200 && response.status < 300) {
         setSubmitStatus({ 
           success: true, 
@@ -91,12 +87,9 @@ const ContactForm = () => {
       
       let errorMessage = 'Ocorreu um erro ao enviar. Tente novamente mais tarde.';
       
-      // Tratamento de erros específicos
       if (error.response) {
-        // Erros 4xx/5xx
         errorMessage = error.response.data?.message || errorMessage;
       } else if (error.request) {
-        // A requisição foi feita mas não houve resposta
         errorMessage = 'Sem resposta do servidor. Verifique sua conexão.';
       }
       
@@ -253,30 +246,6 @@ const ContactForm = () => {
           </Button>
         </motion.div>
       </Form>
-      
-      <style jsx>{`
-        .contact-form {
-          background: white;
-          border: 1px solid #dee2e6;
-        }
-        .input-icon {
-          position: absolute;
-          top: 50%;
-          right: 15px;
-          transform: translateY(-50%);
-          color: #6c757d;
-        }
-        .form-control:focus ~ .input-icon {
-          color: #0d6efd;
-        }
-        .form-control.is-invalid ~ .input-icon {
-          color: #dc3545;
-        }
-        textarea ~ .input-icon {
-          top: 20px;
-          transform: none;
-        }
-      `}</style>
     </motion.div>
   );
 };

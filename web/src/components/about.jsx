@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Image, Card, Button, Badge } from 'react-bootstrap';
 import ImgUrl from '../assets/main.jpeg';
-import Form from './add/Form';
+//import Form from './add/Form';
 import Idade from './add/idade';
 
 
@@ -218,7 +218,7 @@ const About = () => {
 
         <div id="contact" className="pt-5" data-aos="fade-up">
           <h3 className={`text-center h3 fw-bold mb-4 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>Entre em Contato</h3>
-          <Form />
+        {/*<Form />*/}
         </div>
       </Container>
 
