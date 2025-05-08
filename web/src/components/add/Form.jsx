@@ -16,7 +16,7 @@ const ContactForm = () => {
   const [submitStatus, setSubmitStatus] = useState(null);
   const formRef = useRef();
 
-  const API_ENDPOINT = process.env.REACT_APP_API_URL;
+  const API_ENDPOINT = process.env.API_URL;
   const API_HEADERS = {
     'Content-Type': 'application/json',
     
