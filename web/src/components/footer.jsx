@@ -1,52 +1,46 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
-    <footer className="bg-dark text-white py-4 mt-5">
+    <footer className="bg-body-tertiary py-4 mt-auto border-top">
       <Container>
         <Row className="align-items-center">
           <Col md={6} className="text-center text-md-start mb-3 mb-md-0">
-            <p className="mb-0">
-              © {currentYear} aubaro01. Todos os direitos reservados.
+            <p className="mb-0 fs-6 text-body-secondary">
+              © {currentYear} aubaro01.
+              <br />
+              <span className="d-block d-sm-inline">
+                Feito com <FaHeart className="text-danger mx-1" size={14} />.
+              </span>
             </p>
           </Col>
+          
           <Col md={6} className="text-center text-md-end">
-            <ul className="list-inline mb-0">
-              <li className="list-inline-item mx-2">
-                <a 
-                  href="https://github.com/aubaro01" 
-                  className="text-white text-decoration-none"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub size={20} className="hover-effect" />
-                </a>
-              </li>
-              <li className="list-inline-item mx-2">
-                <a 
-                  href="https://www.linkedin.com/in/aubaro01" 
-                  className="text-white text-decoration-none"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin size={20} className="hover-effect" />
-                </a>
-              </li>
-              <li className="list-inline-item mx-2">
-                <a 
-                  href="https://twitter.com/aubaro01" 
-                  className="text-white text-decoration-none"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <FaTwitter size={20} className="hover-effect" />
-                </a>
-              </li>
-            </ul>
+            <div className="social-links d-inline-flex align-items-center justify-content-center justify-content-md-end">
+              <a
+                href="https://github.com/aubaro01"
+                className="text-body-emphasis text-decoration-none mx-3 transition-all"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visitar perfil no GitHub"
+              >
+                <FaGithub size={22} className="hover-effect-github" />
+              </a>
+              
+              <a
+                href="https://www.linkedin.com/in/aubaro"
+                className="text-body-emphasis text-decoration-none mx-3 transition-all"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visitar perfil no LinkedIn"
+              >
+                <FaLinkedin size={22} className="hover-effect-linkedin" />
+              </a>
+            </div>
           </Col>
         </Row>
       </Container>
