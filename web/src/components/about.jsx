@@ -48,8 +48,25 @@ const ExperienceCard = ({ job, theme }) => {
           <span className={mutedTextColor}>{job.period}</span>
         </div>
         <Card.Text className={cardTextColor}>
-          {job.description}
+          {job.description.split('\n').map((line, idx) => (
+            <p key={idx} className="mb-2">{line}</p>
+          ))}
         </Card.Text>
+
+        {job.technologies && job.technologies.length > 0 && (
+          <div className="mt-3 text-center">
+            <strong className={`d-block mb-2 ${mutedTextColor}`}>Techs utilizadas:</strong>
+            <div className="d-flex flex-wrap justify-content-center gap-1">
+              {job.technologies.map((tech, idx) => (
+                <Badge key={idx} bg="dark" className="me-1">
+                  {tech}
+                </Badge>
+              ))}
+            </div>
+          </div>
+        )}
+
+
       </Card.Body>
     </Card>
   );
@@ -79,24 +96,28 @@ const SkillCard = ({ skillGroup, theme }) => {
 
 const workExperienceData = [
   {
-    title: "Full stack Dev",
+    title: "Full Stack Dev -  Estágio",
     company: "Epharma",
     period: "Março 2025 - Julho 2025",
-    description: "---"
+    description: "Desenvolvi novos recursos para clientes de grande porte, como: Filorga, Sandoz, etc.. Além disso, implementei e desenvolvi novas UI e UX.",
+    technologies: ["JSP", "JavaScript", "Ajax", "MySql", "Java"]
   },
   {
     title: "Freelancer",
-    company: "aubaro(Me)",
+    company: "",
     period: "Janeiro 2024 - até ao momento",
-    description: "Desenvolvimento de websites responsivos para pequenos negócios. Criação de sistemas de gestão personalizados conforme as necessidades dos clientes."
+    description: "Desenvolvimento de websites responsivos para pequenos negócios. Criação de sistemas de gestão personalizados conforme as necessidades dos clientes.",
+    technologies: ["PHP", "JavaScript", "MySQL", "Laravel", "React", "Express.js", "MongoDB", "Node.js", "Bootstrap"]
   },
   {
-    title: "HelpDesk",
+    title: "HelpDesk - Estágio",
     company: "Dream ID",
     period: "Abril 2023 - Julho 2024",
-    description: "Neste estagio realizei a manutenção e configuração de pcs, suporte técnico a clientes. Configuração de sistemas de redes e montagem de sistemas informáticos. "
+    description: "Neste estagio realizei a manutenção e configuração de pcs, suporte técnico a clientes. Configuração de sistemas de redes e montagem de sistemas informáticos. Além disso, fiz uma cópia do softaware da empresa em vb.net",
+    technologies: ["VB.NET", "MySql", "Redes"]
   }
 ];
+
 
 const skillsData = [
   {
@@ -169,27 +190,26 @@ const About = () => {
           <Col lg={8} md={7} data-aos="fade-left">
             <h3 className={`h3 fw-bold mb-3 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>Quem Sou Eu?</h3>
             <p className={`lead mb-3 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>
-              Olá, <br />
-              Chamo-me Cláudio Barroso, atualmente tenho <Idade /> anos. Tenho uma grande paixão pela natureza e pela fotografia, por isso, quando vejo uma bela paisagem, não consigo resistir e sempre tiro uma foto. 📸 <br />
-              Atualmente, vivo no Porto, Portugal e estou a explorar a beleza do meu país enquanto me dedico ao desenvolvimento de software.
+              Olá,<br />
+              Chamo-me Cláudio Barroso, atualmente tenho <Idade /> anos. Tenho uma grande paixão pela natureza e por fotografias, por isso, quando vejo uma bela paisagem, não consigo resistir e sempre tiro uma foto. 📸 <br />
+              Atualmente, vivo no Porto, Portugal e estou a explorar a beleza deste país enquanto me dedico a programação.
             </p>
 
             <p className={`mb-4 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>
               Desde muito jovem, sempre fui fascinado pela tecnologia e pelo potencial que ela tem para transformar o mundo.
-              Ao longo dos anos, a minha paixão pela programação continuou a crescer, e hoje estou a aprofundar-me no desenvolvimento Full Stack e de software. <br /><br />
+              Ao longo dos anos, a minha paixão pela programação continuou a crescer, e hoje estou a aprofundar-me dentro do mundo a programação.<br /><br />
               Estou constantemente em busca de novos desafios e de aprender mais sobre novas tecnologias.
               O meu objetivo é criar soluções tecnológicas inovadoras que não só satisfaçam as necessidades dos utilizadores,
               mas que também proporcionem uma experiência agradável e funcional. <br /><br />
-              Quando não estou a programar, podes-me encontrar a explorar a cidade, a tirar fotografias de lugares incríveis
+              Quando não estou a programar, podes-me encontrar a explorar algum lugar, a tirar fotografias de lugares incríveis
               ou a tentar capturar a essência da natureza à minha volta. :)
             </p>
 
-
-            <div className="d-flex flex-wrap gap-2 align-items-center justify-content-center">
+           {/* <div className="d-flex flex-wrap gap-2 align-items-center justify-content-center">
               <Button variant="secondary" href="#contact" className="rounded-pill px-4">
                 Entre em Contato
               </Button>
-            </div>
+            </div>*/}
 
           </Col>
         </Row>
@@ -216,7 +236,7 @@ const About = () => {
           </Row>
         </div>
 
-       {/* <div id="contact" className="pt-5" data-aos="fade-up">
+        {/* <div id="contact" className="pt-5" data-aos="fade-up">
           <h3 className={`text-center h3 fw-bold mb-4 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>Entre em Contato</h3>
         <Form />
         </div>*/}
