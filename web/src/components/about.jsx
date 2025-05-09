@@ -138,7 +138,7 @@ const skillsData = [
   {
     category: "Controle de Versão & Ferramentas",
     icon: "bi bi-git",
-    items: ["Git", "Github", "Postman", "dbeaver"]
+    items: ["Git", "Github", "Postman", "dbeaver", "NetBeans", "VSCode", "Tortoise git"]
   }
 ];
 
@@ -205,7 +205,8 @@ const About = () => {
               ou a tentar capturar a essência da natureza à minha volta. :)
             </p>
 
-           {/* <div className="d-flex flex-wrap gap-2 align-items-center justify-content-center">
+            {/*
+            <div className="d-flex flex-wrap gap-2 align-items-center justify-content-center">
               <Button variant="secondary" href="#contact" className="rounded-pill px-4">
                 Entre em Contato
               </Button>
