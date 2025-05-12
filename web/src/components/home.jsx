@@ -26,7 +26,7 @@ const Home = () => {
     <section className="container mt-5">
       <div className="row align-items-center">
         <div className="col-md-8 pe-lg-5">
-          <h1 className="display-4 fw-bold mb-4">Torno ideias realidade através do código :)</h1>
+          <h1 className="display-4 fw-bold mb-4">Dou vida a ideias com código :)</h1>
 
           <p className={`lead mb-4 ${theme === 'dark' ? 'text-light-dark-mode' : 'text-dark-light-mode'}`}>
             Desenvolvedor Full Stack | Software Developer <br />
@@ -36,12 +36,13 @@ const Home = () => {
           <hr className="my-4" />
           <div className="d-flex flex-column gap-3">
             <p className="fs-5 lh-base mb-0">
-              Com foco em performance e usabilidade, construo interfaces modernas e eficientes.
+              Com foco em performance e usabilidade.
             </p>
 
             <p className="fs-5 lh-base mb-0">
-              Busco entregar código limpo, soluções escaláveis e uma ótima UX.
+              A minha playlist favorita para programar? <br />Está sempre a mudar, mas tem sempre um pouco de <br></br>"No Flowers" por <strong>Phendste</strong> 🎶
             </p>
+
           </div>
 
           <div className="d-flex justify-content-center mt-4">
@@ -71,22 +72,6 @@ const Home = () => {
               filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.1))'
             }}
           />
-        </div>
-      </div>
-
-      <div className="row mt-5 w-100 justify-content-center">
-        <div className="col-12 col-md-10 col-lg-8 text-center">
-          <p className={`mb-4 ${theme === 'dark' ? 'text-light-dark-mode' : 'text-dark-light-mode'}`}>
-            "No Flowers" por <strong>Phendste</strong>
-          </p>
-          <div className="rounded shadow overflow-hidden">
-            <Music
-              src="https://soundcloud.com/user-581412663/no-flowers?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-              title="No flowers"
-              artist="Phendste"
-              cover="https://i1.sndcdn.com/artworks-Xw1iLmzqA1Qd-0-t500x500.jpg"
-            />
-          </div>
         </div>
       </div>
     </section>
