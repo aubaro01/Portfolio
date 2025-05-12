@@ -138,7 +138,7 @@ const skillsData = [
   {
     category: "Controle de Versão & Ferramentas",
     icon: "bi bi-git",
-    items: ["Git", "Github", "Postman", "dbeaver", "NetBeans", "VSCode", "Tortoise git"]
+    items: ["Git", "Github","Github Desktop", "Postman", "dbeaver", "NetBeans", "VSCode", "Tortoise git"]
   }
 ];
 
@@ -171,7 +171,7 @@ const About = () => {
         <SectionTitle
           title="Sobre Mim"
           subtitle="Uma mini apresentação sobre mim"
-          className={`text-center h3 fw-bold mb-4 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}
+          className={`text-center h3 fw-bold mb-4 ${theme === 'dark' ? 'text-light-dark-mode' : 'text-dark-light-mode'}`}
         />
 
         <Row className="align-items-center mb-5">
