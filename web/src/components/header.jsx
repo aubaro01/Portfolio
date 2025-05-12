@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -6,6 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const Header = () => {
   const savedTheme = localStorage.getItem('theme');
   const [isDarkMode, setIsDarkMode] = useState(savedTheme === 'dark');
+  const navbarCollapseRef = useRef(null);
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
@@ -18,6 +19,11 @@ const Header = () => {
       document.body.classList.remove('bg-dark', 'text-white');
       localStorage.setItem('theme', 'light');
     }
+  };
+
+  const handleNavLinkClick = () => {
+    const collapse = new window.bootstrap.Collapse(navbarCollapseRef.current, { toggle: false });
+    collapse.hide();
   };
 
   useEffect(() => {
@@ -34,7 +40,6 @@ const Header = () => {
     <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'} px-4 fixed-top`}>
       <Link className="navbar-brand" to="/" style={{ fontSize: '1.8rem' }}>aubaro01</Link>
 
-      {/* Toggler button for mobile view */}
       <button 
         className="navbar-toggler" 
         type="button" 
@@ -47,17 +52,16 @@ const Header = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      {/* Collapsible navbar items */}
-      <div className="collapse navbar-collapse" id="navbarContent">
+      <div className="collapse navbar-collapse" id="navbarContent" ref={navbarCollapseRef}>
         <ul className="navbar-nav ms-auto align-items-center gap-2 mt-3 mt-lg-0">
           <li className="nav-item">
-            <Link className="nav-link" to="/">Home</Link>
+            <Link className="nav-link" to="/" onClick={handleNavLinkClick}>Home</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/projects">Projetos</Link>
+            <Link className="nav-link" to="/projects" onClick={handleNavLinkClick}>Projetos</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/about">Sobre</Link>
+            <Link className="nav-link" to="/about" onClick={handleNavLinkClick}>Sobre</Link>
           </li>
           <li className="nav-item">
             <button

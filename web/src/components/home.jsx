@@ -3,6 +3,8 @@ import { Button } from 'react-bootstrap';
 import { FaArrowRight } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import reactLogo from '../assets/main.jpeg';
+import Music from './add/music';
+
 const Home = () => {
   const [theme, setTheme] = useState('light');
   const navigate = useNavigate();
@@ -12,11 +14,9 @@ const Home = () => {
     setTheme(prefersDark ? 'dark' : 'light');
   }, []);
 
-
   const buttonVariant = theme === 'dark' ? 'outline-light' : 'outline-dark';
   const buttonTextColor = theme === 'dark' ? 'text-light' : 'text-dark';
   const buttonBackground = theme === 'dark' ? 'bg-dark' : 'bg-light';
-
 
   const handleRedirect = () => {
     navigate('/about');
@@ -56,7 +56,6 @@ const Home = () => {
               <FaArrowRight size={18} className="ms-2" />
             </Button>
           </div>
-
         </div>
 
         <div className="col-md-4 text-center mt-md-0 mt-4">
@@ -72,6 +71,22 @@ const Home = () => {
               filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.1))'
             }}
           />
+        </div>
+      </div>
+
+      <div className="row mt-5 w-100 justify-content-center">
+        <div className="col-12 col-md-10 col-lg-8 text-center">
+          <p className={`mb-4 ${theme === 'dark' ? 'text-light-dark-mode' : 'text-dark-light-mode'}`}>
+            "No Flowers" por <strong>Phendste</strong>
+          </p>
+          <div className="rounded shadow overflow-hidden">
+            <Music
+              src="https://soundcloud.com/user-581412663/no-flowers?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+              title="No flowers"
+              artist="Phendste"
+              cover="https://i1.sndcdn.com/artworks-Xw1iLmzqA1Qd-0-t500x500.jpg"
+            />
+          </div>
         </div>
       </div>
     </section>
