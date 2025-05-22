@@ -29,8 +29,8 @@ const Home = () => {
           <h1 className="display-4 fw-bold mb-4">Dou vida a ideias com código :)</h1>
 
           <p className={`lead mb-4 ${theme === 'dark' ? 'text-light-dark-mode' : 'text-dark-light-mode'}`}>
-            Desenvolvedor Full Stack | Software Developer <br />
-            | React.js | Node.js | Python | Laravel | PHP | Express.js |
+            Desenvolvedor Full-Stack | Software Developer <br />
+            | React.js | Express.js |  Node.js | Python | Laravel | PHP | Django |
           </p>
 
           <hr className="my-4" />
@@ -42,7 +42,6 @@ const Home = () => {
             <p className="fs-5 lh-base mb-0">
               A minha playlist favorita para programar? <br />Está sempre a mudar, mas tem sempre um pouco de <br></br>"No Flowers" por <strong>Phendste</strong> 🎶
             </p>
-
           </div>
 
           <div className="d-flex justify-content-center mt-4">
