@@ -11,7 +11,7 @@ const SectionTitle = ({ title, subtitle, theme }) => {
 
   return (
     <div className="text-center mb-5" data-aos="fade-up">
-      <h2 className={`display-4 fw-bold ${primaryTextColor} position-relative`}>
+      <h2 className={`display-4 fw-bold ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'} position-relative`}>
         {title}
         <div className="position-relative">
           <span
@@ -21,7 +21,7 @@ const SectionTitle = ({ title, subtitle, theme }) => {
         </div>
       </h2>
       {subtitle && (
-        <p className={`mt-3 lead ${mutedTextColor}`}>
+        <p className={`mt-3 lead ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>
           {subtitle}
         </p>
       )}
@@ -65,8 +65,6 @@ const ExperienceCard = ({ job, theme }) => {
             </div>
           </div>
         )}
-
-
       </Card.Body>
     </Card>
   );
