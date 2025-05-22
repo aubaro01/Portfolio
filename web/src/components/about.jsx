@@ -200,7 +200,7 @@ const About = () => {
               O meu objetivo é criar soluções tecnológicas inovadoras que não só satisfaçam as necessidades dos utilizadores,
               mas que também proporcionem uma experiência agradável e funcional. <br /><br />
               Quando não estou a programar, podes-me encontrar a explorar algum lugar, a tirar fotografias de lugares incríveis
-              ou a tentar capturar a essência da natureza à minha volta. :)
+              ou a tentar capturar a essência da natureza à minha volta. <br /> :)
             </p>
           </Col>
           <div className="d-flex flex-wrap gap-2 align-items-center justify-content-center">
