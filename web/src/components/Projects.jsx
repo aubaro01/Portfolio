@@ -69,7 +69,7 @@ const ProjectCard = ({ project }) => {
 };
 
 const Projects = () => {
-  
+
   const theme = window.matchMedia &&
     window.matchMedia('(prefers-color-scheme: dark)').matches
     ? 'dark'
@@ -87,7 +87,7 @@ const Projects = () => {
       title: 'MacLongo site',
       description: 'Design, restruturação e implementação de novas funções para um site',
       githubLink: 'https://github.com/aubaro01/Maclongo_Projeto',
-      image: 'https://private-user-images.githubusercontent.com/109551603/428988138-b69bab30-bb06-43c6-acf0-2e6a4d077f8b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc5MTI1NjYsIm5iZiI6MTc0NzkxMjI2NiwicGF0aCI6Ii8xMDk1NTE2MDMvNDI4OTg4MTM4LWI2OWJhYjMwLWJiMDYtNDNjNi1hY2YwLTJlNmE0ZDA3N2Y4Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUyMlQxMTExMDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kZmRmZTczZDlmMTM0NmU1YTc5Zjg4NTEzNTYzMzU3ODUwOWI3N2I1YzlkY2UwYjE0OTM2ODBhZDliZmUyMjBhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.5s1Y35_MwS6LNyteJSR6wZ6DPOwLlGhBWhZ_9MZjLAc',
+      image: 'https://www.maclongo.pt/assets/images/loja.jpg',
       tags: ['PHP', 'MYSQL', 'Bootstrap', 'CSS', 'Javascript']
     },
     {
@@ -95,14 +95,14 @@ const Projects = () => {
       description: 'Um rep de fotografias',
       githubLink: 'https://github.com/aubaro01/State2State',
       image: 'https://state2state.vercel.app/icon.ico',
-      tags: ['React', 'MongoDB','Express.js', 'bootstrap', 'Node.js']
+      tags: ['React', 'MongoDB', 'Express.js', 'bootstrap', 'Node.js']
     },
     {
       title: 'SkyWatch',
       description: 'Um site que consome uma API da nasa',
       githubLink: 'https://github.com/aubaro01/SkyWatch',
       image: 'https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo@2x.png',
-      tags: ['React','Express.js', 'bootstrap', 'Node.js']
+      tags: ['React', 'Express.js', 'bootstrap', 'Node.js']
     },
   ];
 
@@ -118,18 +118,29 @@ const Projects = () => {
           <h2 className="text-center mb-5 display-4 fw-bold">
             <span className="position-relative">
               Meus Projetos
-              
+
             </span>
           </h2>
           <p className={`lead mb-4 ${theme === 'dark' ? 'text-light-dark-mode' : 'text-dark-light-mode'}`}>
             Confira alguns dos meus trabalhos mais recentes.
           </p>
-          <span
-              className="position-absolute bottom-0 start-50 translate-middle-x bg-primary rounded"
-              style={{ height: '4px', width: '80px' }}
-            />
-        </motion.div>
 
+          <Button
+            variant="outline-primary"
+            size="lg"
+            href="https://github.com/aubaro01"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center rounded-pill px-4 mb-5"
+          >
+            <FiGithub className="me-2" /> Ver mais no GitHub
+          </Button>
+
+          <span
+            className="position-absolute bottom-0 start-50 translate-middle-x bg-primary rounded"
+            style={{ height: '4px', width: '80px' }}
+          />
+        </motion.div>
         <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
           {projects.map((project, index) => (
             <Col key={index} className="d-flex">
@@ -137,25 +148,6 @@ const Projects = () => {
             </Col>
           ))}
         </Row>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
-          viewport={{ once: true }}
-          className="text-center mt-5"
-        >
-          <Button
-            variant="outline-primary"
-            size="lg"
-            href="https://github.com/aubaro01"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-pill px-4"
-          >
-            <FiGithub className="me-2" /> Ver mais no GitHub
-          </Button>
-        </motion.div>
       </div>
     </section>
   );
