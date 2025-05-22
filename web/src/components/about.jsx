@@ -3,7 +3,7 @@ import { Container, Row, Col, Image, Card, Button, Badge } from 'react-bootstrap
 import ImgUrl from '../assets/main.jpeg';
 //import Form from './add/Form';
 import Idade from './add/idade';
-
+import Port from '../assets/cv_claudio.pdf';
 
 const SectionTitle = ({ title, subtitle, theme }) => {
   const primaryTextColor = theme === 'dark' ? 'text-light' : 'text-dark';
@@ -11,7 +11,7 @@ const SectionTitle = ({ title, subtitle, theme }) => {
 
   return (
     <div className="text-center mb-5" data-aos="fade-up">
-      <h2 className={`display-4 fw-bold ${primaryTextColor} position-relative`}>
+      <h2 className={`display-4 fw-bold ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'} position-relative`}>
         {title}
         <div className="position-relative">
           <span
@@ -21,7 +21,7 @@ const SectionTitle = ({ title, subtitle, theme }) => {
         </div>
       </h2>
       {subtitle && (
-        <p className={`mt-3 lead ${mutedTextColor}`}>
+        <p className={`mt-3 lead ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>
           {subtitle}
         </p>
       )}
@@ -65,8 +65,6 @@ const ExperienceCard = ({ job, theme }) => {
             </div>
           </div>
         )}
-
-
       </Card.Body>
     </Card>
   );
@@ -97,22 +95,22 @@ const SkillCard = ({ skillGroup, theme }) => {
 const workExperienceData = [
   {
     title: "Full Stack Dev -  Estágio",
-    company: "Epharma",
+    company: "ePharma",
     period: "Março 2025 - Julho 2025",
-    description: "Desenvolvi novos recursos para clientes de grande porte, como: Filorga, Sandoz, etc.. Além disso, implementei e desenvolvi novas UI e UX.",
+    description: "Desenvolvi novos recursos para clientes de grande dimensão, como a Filorga e a Sandoz. Para além disso, implementei e desenvolvi novas interfaces de utilizador (UI) e experiências de utilizador (UX), dessa forma contribui para a melhoria da usabilidade e eficiência dos portais da empresa.",
     technologies: [".JSP", "JavaScript", "AJAX", "MYSQL", "Java"]
   },
   {
     title: "Freelancer",
     company: "",
     period: "Janeiro 2024 - até ao momento",
-    description: "Desenvolvimento de websites responsivos para pequenos negócios. Criação de sistemas de gestão personalizados conforme as necessidades dos clientes.",
+    description: "Desenvolvi websites para pequenas empresas, bem como criação de sistemas de gestão personalizados, ajustados às necessidades específicas de cada cliente.",
     technologies: ["PHP", "JavaScript", "MYSQL", "Laravel", "React", "Express.js", "MongoDB", "Node.js", "Bootstrap"]
   },
   {
     title: "HelpDesk - Estágio",
-    company: "Dream ID",
-    period: "Abril 2023 - Julho 2024",
+    company: "DreamID",
+    period: "Abril 2023 - Julho 2023",
     description: "Neste estagio realizei a manutenção e configuração de pcs, suporte técnico a clientes. Configuração de sistemas de redes e montagem de sistemas informáticos. Além disso, fiz uma cópia do softaware da empresa em vb.net",
     technologies: ["VB.NET", "MySql", "Redes"]
   }
@@ -123,7 +121,7 @@ const skillsData = [
   {
     category: "Linguagens de Programação",
     icon: "bi bi-code-slash",
-    items: ["JavaScript", "Python", "PHP", "C", "vb.NET", "AJAX"]
+    items: ["JavaScript", "Python", "PHP", "C", "VB.NET", "AJAX"]
   },
   {
     category: "Frameworks & Bibliotecas",
@@ -138,7 +136,7 @@ const skillsData = [
   {
     category: "Controle de Versão & Ferramentas",
     icon: "bi bi-git",
-    items: ["Git", "Github","Github Desktop", "Postman", "dbeaver", "NetBeans", "VSCode", "VSCode Studio", "Tortoise git"]
+    items: ["Git", "Github", "Github Desktop", "Postman", "dbeaver", "NetBeans", "VSCode", "VSCode Studio", "Tortoise git"]
   }
 ];
 
@@ -188,10 +186,10 @@ const About = () => {
           </Col>
 
           <Col lg={8} md={7} data-aos="fade-left">
-            <h3 className={`h3 fw-bold mb-4 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>Quem Sou Eu?</h3>
-            <p className={`lead mb-3 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>
+            <h3 className={`h3 fw-bold mb-3 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>Quem Sou Eu?</h3>
+            <p className={` mb-4 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>
               Olá,<br />
-              Chamo-me Cláudio Barroso, atualmente tenho <Idade /> anos. Tenho uma grande paixão pela natureza e por fotografias, por isso, quando vejo uma bela paisagem, não consigo resistir e sempre tiro uma foto. 📸 <br />
+              Chamo-me Cláudio Barroso, atualmente tenho <Idade /> anos. Tenho uma grande paixão pela <mark>natureza</mark> e por <mark>fotografias</mark>, por isso, quando vejo uma bela paisagem, não consigo resistir e sempre tiro uma foto. 📸 <br />
               Atualmente, vivo no Porto, Portugal e estou a explorar a beleza deste país enquanto me dedico a programação.
             </p>
 
@@ -206,10 +204,10 @@ const About = () => {
             </p>
           </Col>
           <div className="d-flex flex-wrap gap-2 align-items-center justify-content-center">
-              <Button variant="secondary" href="#" className="rounded-pill px-4">
-                Curriculo Vit
-              </Button>
-            </div>
+            <Button variant="secondary" href={Port} className="rounded-pill px-4" download>
+              Curriculum Vitae
+            </Button>
+          </div>
         </Row>
 
         <div className="mb-5" data-aos="fade-up">

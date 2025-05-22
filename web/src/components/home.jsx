@@ -29,8 +29,8 @@ const Home = () => {
           <h1 className="display-4 fw-bold mb-4">Dou vida a ideias com código :)</h1>
 
           <p className={`lead mb-4 ${theme === 'dark' ? 'text-light-dark-mode' : 'text-dark-light-mode'}`}>
-            Desenvolvedor Full-Stack | Software Developer <br />
-            | React.js | Express.js |  Node.js | Python | Laravel | PHP | Django |
+            Full-Stack Web Developer | Software Developer <br />
+            | React.js | Express.js | Node.js | Python | Laravel | PHP | Django |
           </p>
 
           <hr className="my-4" />
