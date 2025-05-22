@@ -87,8 +87,8 @@ const Projects = () => {
       title: 'MacLongo site',
       description: 'Design, restruturação e implementação de novas funções para um site',
       githubLink: 'https://github.com/aubaro01/Maclongo_Projeto',
-      image: 'https://private-user-images.githubusercontent.com/109551603/428988138-b69bab30-bb06-43c6-acf0-2e6a4d077f8b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY3MTQ1ODgsIm5iZiI6MTc0NjcxNDI4OCwicGF0aCI6Ii8xMDk1NTE2MDMvNDI4OTg4MTM4LWI2OWJhYjMwLWJiMDYtNDNjNi1hY2YwLTJlNmE0ZDA3N2Y4Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTA4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUwOFQxNDI0NDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05ODgzOTU1NzVlNGM2NDA1NGMyOWM4ODU2ODZhODk1OTNiMzgwNDkxNzcwMmIwMmYxYTI1NjVjNjEwM2VkOTA5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ogaud4OiaJEKi7mYaTZdnwJNXDQIOWtSCkA4eIfzpfw',
-      tags: ['PHP', 'MYSQL', 'Bootstrap', 'Css', 'Javascript']
+      image: 'https://private-user-images.githubusercontent.com/109551603/428988138-b69bab30-bb06-43c6-acf0-2e6a4d077f8b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc5MTI1NjYsIm5iZiI6MTc0NzkxMjI2NiwicGF0aCI6Ii8xMDk1NTE2MDMvNDI4OTg4MTM4LWI2OWJhYjMwLWJiMDYtNDNjNi1hY2YwLTJlNmE0ZDA3N2Y4Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTIyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUyMlQxMTExMDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kZmRmZTczZDlmMTM0NmU1YTc5Zjg4NTEzNTYzMzU3ODUwOWI3N2I1YzlkY2UwYjE0OTM2ODBhZDliZmUyMjBhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.5s1Y35_MwS6LNyteJSR6wZ6DPOwLlGhBWhZ_9MZjLAc',
+      tags: ['PHP', 'MYSQL', 'Bootstrap', 'CSS', 'Javascript']
     },
     {
       title: 'State2State',
@@ -96,6 +96,13 @@ const Projects = () => {
       githubLink: 'https://github.com/aubaro01/State2State',
       image: 'https://state2state.vercel.app/icon.ico',
       tags: ['React', 'MongoDB','Express.js', 'bootstrap', 'Node.js']
+    },
+    {
+      title: 'SkyWatch',
+      description: 'Um site que consome uma API da nasa',
+      githubLink: 'https://github.com/aubaro01/SkyWatch',
+      image: 'https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo@2x.png',
+      tags: ['React','Express.js', 'bootstrap', 'Node.js']
     },
   ];
 

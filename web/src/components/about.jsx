@@ -100,14 +100,14 @@ const workExperienceData = [
     company: "Epharma",
     period: "Março 2025 - Julho 2025",
     description: "Desenvolvi novos recursos para clientes de grande porte, como: Filorga, Sandoz, etc.. Além disso, implementei e desenvolvi novas UI e UX.",
-    technologies: ["JSP", "JavaScript", "Ajax", "MySql", "Java"]
+    technologies: [".JSP", "JavaScript", "AJAX", "MYSQL", "Java"]
   },
   {
     title: "Freelancer",
     company: "",
     period: "Janeiro 2024 - até ao momento",
     description: "Desenvolvimento de websites responsivos para pequenos negócios. Criação de sistemas de gestão personalizados conforme as necessidades dos clientes.",
-    technologies: ["PHP", "JavaScript", "MySQL", "Laravel", "React", "Express.js", "MongoDB", "Node.js", "Bootstrap"]
+    technologies: ["PHP", "JavaScript", "MYSQL", "Laravel", "React", "Express.js", "MongoDB", "Node.js", "Bootstrap"]
   },
   {
     title: "HelpDesk - Estágio",
@@ -123,22 +123,22 @@ const skillsData = [
   {
     category: "Linguagens de Programação",
     icon: "bi bi-code-slash",
-    items: ["JavaScript", "Python", "PHP", "C", "VB.NET", "Ajax"]
+    items: ["JavaScript", "Python", "PHP", "C", "vb.NET", "AJAX"]
   },
   {
     category: "Frameworks & Bibliotecas",
     icon: "bi bi-box",
-    items: ["React", "ExpressJS", "Laravel"]
+    items: ["React", "ExpressJS", "Laravel", "Django"]
   },
   {
     category: "Base de Dados",
     icon: "bi bi-server",
-    items: ["MongoDB", "MySQL", "MariaDB"]
+    items: ["MongoDB", "MySQL", "MariaDB", "SQL"]
   },
   {
     category: "Controle de Versão & Ferramentas",
     icon: "bi bi-git",
-    items: ["Git", "Github","Github Desktop", "Postman", "dbeaver", "NetBeans", "VSCode", "Tortoise git"]
+    items: ["Git", "Github","Github Desktop", "Postman", "dbeaver", "NetBeans", "VSCode", "VSCode Studio", "Tortoise git"]
   }
 ];
 
@@ -188,7 +188,7 @@ const About = () => {
           </Col>
 
           <Col lg={8} md={7} data-aos="fade-left">
-            <h3 className={`h3 fw-bold mb-3 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>Quem Sou Eu?</h3>
+            <h3 className={`h3 fw-bold mb-4 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>Quem Sou Eu?</h3>
             <p className={`lead mb-3 ${theme === 'dark' ? 'text-body-light' : 'text-body-dark'}`}>
               Olá,<br />
               Chamo-me Cláudio Barroso, atualmente tenho <Idade /> anos. Tenho uma grande paixão pela natureza e por fotografias, por isso, quando vejo uma bela paisagem, não consigo resistir e sempre tiro uma foto. 📸 <br />
@@ -204,15 +204,12 @@ const About = () => {
               Quando não estou a programar, podes-me encontrar a explorar algum lugar, a tirar fotografias de lugares incríveis
               ou a tentar capturar a essência da natureza à minha volta. :)
             </p>
-
-            {/*
-            <div className="d-flex flex-wrap gap-2 align-items-center justify-content-center">
-              <Button variant="secondary" href="#contact" className="rounded-pill px-4">
-                Entre em Contato
-              </Button>
-            </div>*/}
-
           </Col>
+          <div className="d-flex flex-wrap gap-2 align-items-center justify-content-center">
+              <Button variant="secondary" href="#" className="rounded-pill px-4">
+                Curriculo Vit
+              </Button>
+            </div>
         </Row>
 
         <div className="mb-5" data-aos="fade-up">
