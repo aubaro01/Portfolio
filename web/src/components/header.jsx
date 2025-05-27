@@ -60,12 +60,15 @@ const Header = () => {
             <Link className="nav-link" to="/projects" onClick={handleNavLinkClick}>Projetos</Link>
           </li>
           <li className="nav-item">
+            <Link className="nav-link" to="/blog" onClick={handleNavLinkClick}>Blog</Link>
+          </li>
+          <li className="nav-item">
             <Link className="nav-link" to="/about" onClick={handleNavLinkClick}>Sobre</Link>
           </li>
           <li className="nav-item">
             <button
               className={`btn btn-${isDarkMode ? 'outline-light' : 'outline-dark'} rounded-circle p-2`}
-              onClick={toggleTheme}
+              onClick={toggleTheme} 
               style={{
                 transition: 'background-color 0.3s, color 0.3s',
                 border: 'none'

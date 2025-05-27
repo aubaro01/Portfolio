@@ -12,10 +12,6 @@ const Footer = () => {
           <Col md={6} className="text-center text-md-start mb-3 mb-md-0">
             <p className="mb-0 fs-6 text-body-secondary">
               © {currentYear} aubaro01
-              <br />
-              <span className="d-block d-sm-inline">
-                Feito com <FaHeart className="text-danger mx-1" size={14} />
-              </span>
             </p>
           </Col>
           
