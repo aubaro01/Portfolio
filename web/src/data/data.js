@@ -33,7 +33,7 @@ HAVING total_os > 5;`
         id: '2',
         title: 'Internship',
         subtitle: 'Experiência de estágio em Software Development',
-        content: 'Tive o prazer de fazer o meu estágio, pós curso em uma empresa dentro da area. Dentro dessa empresa aprendi diversas coisas e tive o prazer de trabalhar com diversas tecnologias. ',
+        content: 'Em Construção ',
         images: [],
         code: []
     }
