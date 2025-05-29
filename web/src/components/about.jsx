@@ -98,7 +98,7 @@ const workExperienceData = [
     company: "ePharma",
     period: "Março 2025 - Julho 2025",
     description: "Desenvolvi novos recursos para clientes de grande dimensão, como a Filorga e a Sandoz. Para além disso, implementei e desenvolvi novas interfaces de utilizador (UI) e experiências de utilizador (UX), dessa forma contribui para a melhoria da usabilidade e eficiência dos portais da empresa.",
-    technologies: [".JSP", "JavaScript", "AJAX", "MYSQL", "Java"]
+    technologies: [".JSP", "JavaScript", "AJAX", "MYSQL", "Java", "Spring Boot"]
   },
   {
     title: "Freelancer",
@@ -121,12 +121,12 @@ const skillsData = [
   {
     category: "Linguagens de Programação",
     icon: "bi bi-code-slash",
-    items: ["JavaScript", "Python", "PHP", "C", "VB.NET", "AJAX"]
+    items: ["JavaScript", "Python", "PHP", "C", "VB.NET", "AJAX", "Java"]
   },
   {
     category: "Frameworks & Bibliotecas",
     icon: "bi bi-box",
-    items: ["React", "ExpressJS", "Laravel", "Django"]
+    items: ["React", "ExpressJS", "Laravel", "Django", "Spring Boot"]
   },
   {
     category: "Base de Dados",
@@ -136,7 +136,7 @@ const skillsData = [
   {
     category: "Controle de Versão & Ferramentas",
     icon: "bi bi-git",
-    items: ["Git", "Github", "Github Desktop", "Postman", "dbeaver", "NetBeans", "VSCode", "VSCode Studio", "Tortoise git"]
+    items: ["Git", "Github", "Github Desktop", "Postman", "dbeaver", "NetBeans", "IntlliJ" ,"VSCode", "VSCode Studio", "Tortoise git"]
   }
 ];
 

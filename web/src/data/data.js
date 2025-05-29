@@ -13,27 +13,27 @@ export const posts = [
         id: '3',
         title: 'PC AUTO',
         subtitle: 'Sistema de gestão para oficina mecânica em Python',
-        content: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...', 
+        content: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...',
         images: [
             'https://exemplo.com/pcauto-diagrama.png',
             'https://exemplo.com/pcauto-interface.jpg'
         ],
         code: [{
-                language: 'sql',
-                content: `-- Exemplo de query otimizada
+            language: 'sql',
+            content: `-- Exemplo de query otimizada
 SELECT clientes.nome, COUNT(ordens_servico.id) AS total_os
 FROM clientes
 LEFT JOIN ordens_servico 
   ON clientes.id = ordens_servico.cliente_id
 GROUP BY clientes.nome
 HAVING total_os > 5;`
-            }]
+        }]
     },
     {
         id: '2',
         title: 'Internship',
         subtitle: 'Experiência de estágio em Software Development',
-        content: 'Tive o prazer de fazer o meu estágio, pós curso em uma empresa dentro da area. Dentro dessa empresa aprendi diversas coisas e tive o prazer de trabalhar com diversas tecnologias. ', 
+        content: 'Em Construção ',
         images: [],
         code: []
     }
