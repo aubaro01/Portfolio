@@ -30,17 +30,17 @@ const Home = () => {
 
           <p className={`lead mb-4 ${theme === 'dark' ? 'text-light-dark-mode' : 'text-dark-light-mode'}`}>
             Full-Stack Web Developer | Software Developer <br />
-            | React.js | Express.js | Node.js | Python | Laravel | PHP | Django | Java | Spring Boot |
+            | React.js | Express.js | Node.js | Python | Laravel | PHP | Java | Spring Boot |
           </p>
 
           <hr className="my-4" />
           <div className="d-flex flex-column gap-3">
             <p className="fs-5 lh-base mb-0">
-              Com foco em performance e usabilidade.
+             Um apaixonado por programação.
             </p>
 
             <p className="fs-5 lh-base mb-0">
-              A minha playlist favorita para programar? <br />Está sempre a mudar, mas tem sempre um pouco de <br></br>"No Flowers" por <strong>Phendste</strong> 🎶
+              A minha playlist favorita para programar? <br />Está sempre a mudar, mas tem sempre um pouco de <br /><strong>Ryan Librada</strong> 🎶
             </p>
           </div>
 
