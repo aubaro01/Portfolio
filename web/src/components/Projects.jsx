@@ -98,6 +98,13 @@ const Projects = () => {
       tags: ['React', 'MongoDB', 'Express.js', 'bootstrap', 'Node.js']
     },
     {
+      title: 'Spring CRUD',
+      description: 'Um CRUD simples em spring com arquitetura hexagonal',
+      githubLink: 'https://github.com/aubaro01/CRUD-SpringBoot',
+      image: 'https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg',
+      tags: ['Spring Boot', 'MongoDB', 'Java',]
+    },
+    {
       title: 'SkyWatch',
       description: 'Um site que consome uma API da nasa',
       githubLink: 'https://github.com/aubaro01/SkyWatch',

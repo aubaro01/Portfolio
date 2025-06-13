@@ -33,7 +33,7 @@ HAVING total_os > 5;`
         id: '2',
         title: 'Internship',
         subtitle: 'Experiência de estágio em Software Development',
-        content: 'Em Construção ',
+        content: 'Em Construção',
         images: [],
         code: []
     }

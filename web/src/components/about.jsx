@@ -97,7 +97,7 @@ const workExperienceData = [
     title: "Full Stack Dev -  Estágio",
     company: "ePharma",
     period: "Março 2025 - Julho 2025",
-    description: "Desenvolvi novos recursos para clientes de grande dimensão, como a Filorga e a Sandoz. Para além disso, implementei e desenvolvi novas interfaces de utilizador (UI) e experiências de utilizador (UX), dessa forma contribui para a melhoria da usabilidade e eficiência dos portais da empresa.",
+    description: "Desenvolvi novos recursos para clientes de grande dimensão, como a Filorga e a Sandoz. Para além disso, implementei e desenvolvi novas interfaces de utilizador (UI) e experiências de utilizador (UX), dessa forma contribui para a melhoria da usabilidade e eficiência dos portais da empresa. Implementação e consumo de APIs REST com Java, Spring Boot. Colaboração com a equipa para otimizar e melhorar continuamente os sistemas.",
     technologies: [".JSP", "JavaScript", "AJAX", "MYSQL", "Java", "Spring Boot"]
   },
   {
@@ -126,7 +126,7 @@ const skillsData = [
   {
     category: "Frameworks & Bibliotecas",
     icon: "bi bi-box",
-    items: ["React", "ExpressJS", "Laravel", "Django", "Spring Boot"]
+    items: ["React", "ExpressJS", "Laravel", "Bootstrap","Spring Boot"]
   },
   {
     category: "Base de Dados",
@@ -203,11 +203,11 @@ const About = () => {
               ou a tentar capturar a essência da natureza à minha volta. <br /> :)
             </p>
           </Col>
-          <div className="d-flex flex-wrap gap-2 align-items-center justify-content-center">
+         {/* <div className="d-flex flex-wrap gap-2 align-items-center justify-content-center">
             <Button variant="secondary" href={Port} className="rounded-pill px-4" download>
               Curriculum Vitae
             </Button>
-          </div>
+          </div>*/}
         </Row>
 
         <div className="mb-5" data-aos="fade-up">
