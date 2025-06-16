@@ -126,7 +126,7 @@ const skillsData = [
   {
     category: "Frameworks & Bibliotecas",
     icon: "bi bi-box",
-    items: ["React", "ExpressJS", "Laravel", "Bootstrap","Spring Boot"]
+    items: ["React", "Node.JS", "Express.JS", "Laravel", "Bootstrap", "Spring Boot"]
   },
   {
     category: "Base de Dados",
@@ -136,7 +136,7 @@ const skillsData = [
   {
     category: "Controle de Versão & Ferramentas",
     icon: "bi bi-git",
-    items: ["Git", "Github", "Github Desktop", "Postman", "dbeaver", "NetBeans", "IntlliJ" ,"VSCode", "VSCode Studio", "Tortoise git"]
+    items: ["Git", "Github", "Github Desktop", "Postman", "DBeaver", "NetBeans", "IntlliJ" ,"VSCode", "VSCode Studio", "Tortoise git"]
   }
 ];
 
