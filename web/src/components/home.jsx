@@ -30,7 +30,7 @@ const Home = () => {
 
           <p className={`lead mb-4 ${theme === 'dark' ? 'text-light-dark-mode' : 'text-dark-light-mode'}`}>
             Full-Stack Web Developer | Software Developer <br />
-            | React.js | Express.js | Node.js | Python | Laravel | PHP | Java | Spring Boot |
+            | React.js | Express.js | Node.js | Laravel | PHP | Java | Spring Boot |
           </p>
 
           <hr className="my-4" />
