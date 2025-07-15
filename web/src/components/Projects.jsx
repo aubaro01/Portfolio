@@ -91,18 +91,18 @@ const Projects = () => {
       tags: ['PHP', 'MYSQL', 'Bootstrap', 'CSS', 'Javascript']
     },
     {
-      title: 'State2State',
-      description: 'Um rep de fotografias',
-      githubLink: 'https://github.com/aubaro01/State2State',
-      image: 'https://state2state.vercel.app/icon.ico',
-      tags: ['React', 'MongoDB', 'Express.js', 'bootstrap', 'Node.js']
+      title: 'Moamba Manager',
+      description: 'Uma dashboard para gestão de uma loja de produtos alimentares',
+      githubLink: 'https://github.com/aubaro01/MoambaManager',
+      image: 'https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg',
+      tags: ['React.js', 'MongoDB', 'Express.js', 'primeReact', 'Node.js', 'Cors', 'JWT']
     },
     {
       title: 'Spring CRUD',
       description: 'Um CRUD simples em spring com arquitetura hexagonal',
       githubLink: 'https://github.com/aubaro01/CRUD-SpringBoot',
       image: 'https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg',
-      tags: ['Spring Boot', 'MongoDB', 'Java',]
+      tags: ['Spring Boot', 'MongoDB', 'Java']
     },
     {
       title: 'SkyWatch',

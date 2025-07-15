@@ -94,11 +94,11 @@ const SkillCard = ({ skillGroup, theme }) => {
 
 const workExperienceData = [
   {
-    title: "Full Stack Dev -  Estágio",
+    title: "Software Developer -  Estágio",
     company: "ePharma",
     period: "Março 2025 - Julho 2025",
     description: "Desenvolvi novos recursos para clientes de grande dimensão, como a Filorga e a Sandoz. Para além disso, implementei e desenvolvi novas interfaces de utilizador (UI) e experiências de utilizador (UX), dessa forma contribui para a melhoria da usabilidade e eficiência dos portais da empresa. Implementação e consumo de APIs REST com Java, Spring Boot. Colaboração com a equipa para otimizar e melhorar continuamente os sistemas.",
-    technologies: [".JSP", "JavaScript", "AJAX", "MYSQL", "Java", "Spring Boot"]
+    technologies: ["JSP", "JavaScript", "AJAX", "MYSQL", "Java", "Spring Boot"]
   },
   {
     title: "Freelancer",
@@ -126,7 +126,7 @@ const skillsData = [
   {
     category: "Frameworks & Bibliotecas",
     icon: "bi bi-box",
-    items: ["React", "Node.JS", "Express.JS", "Laravel", "Bootstrap", "Spring Boot"]
+    items: ["React.JS", "Node.JS", "Express.JS", "Laravel", "Bootstrap", "PrimeReact", "Spring Boot"]
   },
   {
     category: "Base de Dados",
