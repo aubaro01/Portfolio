@@ -38,3 +38,5 @@ HAVING total_os > 5;`
         code: []
     }
 ];
+
+export const SKILLS = ['React.js', 'Node.js', 'Express.js', 'PHP', 'Java', 'Spring Boot'];
