@@ -3,7 +3,7 @@ import { Container, Row, Col, Badge, Button, Spinner } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import reactLogo from '../assets/main.jpeg';
 import { SKILLS } from '../data/data';
-import './Home.css';
+import "../styles/HomeStyle.css";
 
 const COUNTERS = [
   { num: '3+', label: 'anos de código' },
