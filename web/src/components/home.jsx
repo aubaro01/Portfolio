@@ -11,6 +11,39 @@ const COUNTERS = [
   { num: '0', label: 'cafés' },
 ];
 
+const PHRASES = [
+  'A ouvir Ryan Librada enquanto escrevo isto.',
+  'A beber café enquanto depuro isto.',
+  'A pensar em soluções simples para problemas complexos.',
+];
+const [phraseIndex, setPhraseIndex] = useState(0);
+const [displayed, setDisplayed] = useState('');
+const [deleting, setDeleting] = useState(false);
+
+useEffect(() => {
+  const current = PHRASES[phraseIndex];
+
+  if (!deleting && displayed.length < current.length) {
+    const t = setTimeout(() => setDisplayed(current.slice(0, displayed.length + 1)), 40);
+    return () => clearTimeout(t);
+  }
+
+  if (!deleting && displayed.length === current.length) {
+    const t = setTimeout(() => setDeleting(true), 2000);
+    return () => clearTimeout(t);
+  }
+
+  if (deleting && displayed.length > 0) {
+    const t = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 20);
+    return () => clearTimeout(t);
+  }
+
+  if (deleting && displayed.length === 0) {
+    setDeleting(false);
+    setPhraseIndex((i) => (i + 1) % PHRASES.length);
+  }
+}, [displayed, deleting, phraseIndex]);
+
 const Home = () => {
   const [isDark, setIsDark] = useState(false);
   const [isNavigating, setIsNavigating] = useState(false);
@@ -36,11 +69,6 @@ const Home = () => {
   return (
     <Container className="home-section">
       <div className="w-100">
-
-        <div className="home-eyebrow" style={{ color: muted }}>
-          <span className="home-eyebrow-line" style={{ background: muted }} />
-          aubaro01
-        </div>
 
         <Row className="g-5 align-items-start">
           <Col md={6}>
@@ -71,10 +99,18 @@ const Home = () => {
               problemas complexos em soluções simples.
             </p>
 
-            <div className="home-music-row" style={{ color: muted }}>
-              <span className="home-music-dot" style={{ background: muted }} />
-              A ouvir Ryan Librada enquanto escrevo isto
-            </div>
+           <div className="home-music-row" style={{ color: muted }}>
+            <span className="home-music-dot" style={{ background: muted }} />
+             {displayed}
+             <span style={{
+              display: 'inline-block',
+              width: '1px',
+              height: '12px',
+              background: muted,
+              marginLeft: '2px',
+              animation: 'blink 1s step-end infinite',
+              }} />
+              </div>
 
             <div className="home-cta-row">
               <Button
