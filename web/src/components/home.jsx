@@ -26,11 +26,11 @@ const Home = () => {
     <section className="container mt-5">
       <div className="row align-items-center">
         <div className="col-md-8 pe-lg-5">
-          <h1 className="display-4 fw-bold mb-4">Dou vida a ideias com código :)</h1>
+          <h1 className="display-4 fw-bold mb-4">Software Developer || Web Developer</h1>
 
           <p className={`lead mb-4 ${theme === 'dark' ? 'text-light-dark-mode' : 'text-dark-light-mode'}`}>
-            Full-Stack Web Developer | Software Developer <br />
-            | React.js | Express.js | Node.js | Laravel | PHP | Java | Spring Boot |
+            |React.js | Express.js | Node.js | PHP | Java | Spring Boot | 
+             Problem Solving | Team Collaboration | Communication Skills |
           </p>
 
           <hr className="my-4" />
